@@ -10,7 +10,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.apache.log4j.AppenderSkeleton;
-import org.apache.log4j.Layout;
 import org.apache.log4j.Level;
 import org.apache.log4j.spi.LoggingEvent;
 
@@ -38,16 +37,6 @@ public class SlackIncomingWebHooksAppender extends AppenderSkeleton {
     private String traceIconEmoji;
     private String iconURL;
     private String channel;
-
-    public SlackIncomingWebHooksAppender() {
-        super(true);
-    }
-
-    public SlackIncomingWebHooksAppender(Layout layout) {
-        super(true);
-        super.setLayout(layout);
-        super.activateOptions();
-    }
 
     public void setUsername(String username) {
         this.username = username;
@@ -128,6 +117,7 @@ public class SlackIncomingWebHooksAppender extends AppenderSkeleton {
             this.sendMessage(parameters);
         }
         catch(IOException exception) {
+        	System.out.println(event.getMessage());
             exception.printStackTrace();
         }
     }
