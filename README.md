@@ -29,15 +29,15 @@ sou4j-log4j は、プロジェクト「創 (Sou)」のサブプロジェクト�
 ### SlackIncomingWebHooksAppender
 
 | 項目              | 説明 |
-|------------------+------|
+|------------------|------|
 | webHookURL (必須) | Slack の IncomingWebHooks の URL を設定します。 |
 | username         | Slack に通知をする際のユーザー名を設定します。 デフォルトは IncomingWebHooks の URL を取得する Slack 画面で入力したユーザー名です。 ユーザー名を変更したい場合に設定します。 |
-| fatalIconEmoji   | FATAL レベルの通知をする際の Slack 絵文字を設定します。 デフォルトは　:exclamation:　です。 (※1) |
-| errorIconEmoji   | ERROR レベルの通知をする際の Slack 絵文字を設定します。 デフォルトは :exclamation: です。 (※1) |
-| warnIconEmoji    | WARN レベルの通知をする際の Slack 絵文字を設定します。 デフォルトは :warning: です。 (※1) |
-| infoIconEmoji    | INFO レベルの通知をする際の Slack 絵文字を設定します。 デフォルトは :bell: です。 (※1) |
-| debugIconEmoji   | DEBUG レベルの通知をする際の Slack 絵文字を設定します。　デフォルトは :bell: です。 (※1) |
-| traceIconEmoji   | TRACE レベルの通知をする際の Slack 絵文字を設定します。 デフォルトは :bell: です。 (※1) |
+| fatalIconEmoji   | FATAL レベルの通知をする際の Slack 絵文字を設定します。 デフォルトは `:exclamation:` です。 (※1) |
+| errorIconEmoji   | ERROR レベルの通知をする際の Slack 絵文字を設定します。 デフォルトは `:exclamation:` です。 (※1) |
+| warnIconEmoji    | WARN レベルの通知をする際の Slack 絵文字を設定します。 デフォルトは `:warning:` です。 (※1) |
+| infoIconEmoji    | INFO レベルの通知をする際の Slack 絵文字を設定します。 デフォルトは `:bell:` です。 (※1) |
+| debugIconEmoji   | DEBUG レベルの通知をする際の Slack 絵文字を設定します。　デフォルトは `:bell:` です。 (※1) |
+| traceIconEmoji   | TRACE レベルの通知をする際の Slack 絵文字を設定します。 デフォルトは `:bell:` です。 (※1) |
 | channel          | 通知先のチャネルや相手を設定します。 デフォルトは IncomingWebHooks の URL を取得する Slack の画面で入力した通知先です。 通知先を変更したい場合に設定します。 |
 | iconURL          | 通知の際のアイコンを画像にしたい場合に URL を設定できます。 この URL を設定した場合、上記の xxxxEmoji の設定値を設定していても、この URL がの画像が優先されます。 |
 
